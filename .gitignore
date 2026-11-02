@@ -3,3 +3,8 @@
 __pycache__/
 *.pyc
 *.pdf
+
+data/intermediate/*
+!data/intermediate/.gitkeep
+*.egg-info/
+build/
