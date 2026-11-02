@@ -34,7 +34,13 @@ Coverage first, then correctness, then cost. A missed principal risk is invisibl
 
 \- A small local model on CPU stands in for a production model; the model is a configuration setting.
 
+## 5. Not solving now (next)
 
+\- Year-over-year trends and cross-company search (the schema carries company and report year to allow it).
+
+\- A database and a query or alert layer.
+
+\- Other layouts and file formats, and risk disclosures outside the scoped pages.
 
 
 
