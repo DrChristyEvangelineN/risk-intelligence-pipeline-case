@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "categories": ["financial", "operational", "regulatory", "market", "climate", "cyber",
+                 "supply_chain", "geopolitical", "other"],
+  "note": "Closed list. First matching rule wins; the title is tried before the description. Unmatched risks go to 'other' for human review, which is how the list grows (taxonomy v2) without re-reading any PDF.",
+  "rules": [
+    {"category": "cyber",        "keywords": ["cyber", "ransomware", "information security", "data breach"]},
+    {"category": "climate",      "keywords": ["climate", "greenhouse", "ghg", "carbon", "emission", "extreme weather", "biodiversity"]},
+    {"category": "geopolitical", "keywords": ["geopolit", "sanction", "trade tension", "export control", "tariff", "conflict"]},
+    {"category": "regulatory",   "keywords": ["regulat", "compliance", "fines", "legislation", "corruption", "bribery", "permit", "legal"]},
+    {"category": "supply_chain", "keywords": ["supply chain", "supplier", "upstream", "raw material", "logistic"]},
+    {"category": "market",       "keywords": ["market", "demand", "competition", "competitor", "auction", "pricing"]},
+    {"category": "financial",    "keywords": ["interest rate", "currency", "liquidity", "credit", "financing", "inflation", "capital"]},
+    {"category": "operational",  "keywords": ["injur", "safety", "workforce", "execution", "production", "quality", "delay", "workers", "labour"]}
+  ]
+}

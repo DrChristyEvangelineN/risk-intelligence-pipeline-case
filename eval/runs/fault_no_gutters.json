@@ -1,0 +1,67 @@
+{
+  "fault": "no-gutters",
+  "run_utc": "2026-11-03T09:26:14+00:00",
+  "pipeline_version": "0.1.0",
+  "taxonomy_version": "1.0",
+  "source_sha256": "09aa4e8bd783ba4b964322945e3c24f1a1140045cc4e499f518a613ab707cfdc",
+  "metrics": {
+    "title_recall": 0.0,
+    "title_precision": 0.0,
+    "category_accuracy": 0.0,
+    "mitigation_accuracy": 0.0,
+    "grounding_rate": 0.214,
+    "forbidden_items": 0,
+    "schema_problems": 1,
+    "governance_ok": 1.0
+  },
+  "thresholds": {
+    "title_recall": 0.9,
+    "title_precision": 0.9,
+    "category_accuracy": 0.8,
+    "mitigation_accuracy": 1.0,
+    "grounding_rate": 1.0,
+    "forbidden_items": 0,
+    "schema_problems": 0,
+    "governance_ok": 1.0
+  },
+  "failed": [
+    "title_recall",
+    "title_precision",
+    "category_accuracy",
+    "mitigation_accuracy",
+    "grounding_rate",
+    "schema_problems"
+  ],
+  "passed": false,
+  "details": {
+    "missing": [
+      "Geopolitics and regulatory framework",
+      "Project execution",
+      "Cyber attacks",
+      "Carbon taxes and tariffs",
+      "Cost implication of injuries in own workforce",
+      "Cost implications of injuries to contractors and sub-contractors",
+      "Fines related to forced or child labour",
+      "Insufficient market conditions",
+      "Cyber security risks",
+      "Risk of corruption and bribery"
+    ],
+    "category_mismatches": [],
+    "ungrounded_sentences": [
+      "p71-impact-materiality: Financial materiality \u2002Positive \u2002Opportunity Negative \u2002Risk",
+      "p72-impact-materiality: Financial materiality \u2002Positive \u2002Opportunity Negative \u2002Risk",
+      "p73-double-materiality: Potential injuries leading to delays, lost work hours and compensation",
+      "p73-double-materiality: Health and safety incidents of supply chain workers (actual) Upstream ",
+      "p73-health-and-safety-incidents-of-contracto: Own operations Cost implications of injuries to contractors and sub-co",
+      "p73-other-work-related-rights-of-workers-in-: Child and forced labour (potential) Upstream Fines related to forced o",
+      "p73-impact-materiality: Financial materiality \u2002Positive \u2002Opportunity Negative \u2002Risk",
+      "p74-particular-rights-of-indigenous-peoples: Impacts on the right to free, prior, and informed consent (potential) ",
+      "p74-double-materiality: Political engagement contributing to the green transition (actual) Own",
+      "p74-cyber-security: Cyber security incidents (entity-specific, potential) Downstream Cyber"
+    ],
+    "forbidden_extracted": [],
+    "validation_problems": [
+      "p73-double-materiality: duplicate id"
+    ]
+  }
+}

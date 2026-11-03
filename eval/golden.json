@@ -1,0 +1,29 @@
+{
+  "about": "Hand-written from the Vestas Annual Report 2025, pages 50-51 and 71-74, read against the page images. DRAFT: written by one reviewer, so labels (especially categories) reflect one person's judgement. Scope rule: risks TO the company only; impacts, opportunities and items scored immaterial are excluded.",
+  "risks": [
+    {"title": "Geopolitics and regulatory framework", "page": 51, "category": "geopolitical", "risk_type": "principal_enterprise_risk", "mitigation_stated": true,
+     "mitigation_quote": "We manage geopolitical risks by continuously monitoring global developments and implementing appropriate mitigations."},
+    {"title": "Project execution", "page": 51, "category": "operational", "risk_type": "principal_enterprise_risk", "mitigation_stated": true,
+     "mitigation_quote": "We mitigate execution risks through project governance, enhanced planning functions, and continuous alignment between commercial and delivery teams."},
+    {"title": "Cyber attacks", "page": 51, "category": "cyber", "risk_type": "principal_enterprise_risk", "mitigation_stated": true,
+     "mitigation_quote": "As a global manufacturer and key contributor to critical infrastructure, Vestas is required to continuously address evolving cyber risks, both to our company and to the customers we serve."},
+    {"title": "Carbon taxes and tariffs", "page": 71, "category": "climate", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Cost implication of injuries in own workforce", "page": 73, "category": "operational", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Cost implications of injuries to contractors and sub-contractors", "page": 73, "category": "operational", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Fines related to forced or child labour", "page": 73, "category": "regulatory", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Insufficient market conditions", "page": 74, "category": "market", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Cyber security risks", "page": 74, "category": "cyber", "risk_type": "material_sustainability_risk", "mitigation_stated": false},
+    {"title": "Risk of corruption and bribery", "page": 74, "category": "regulatory", "risk_type": "material_sustainability_risk", "mitigation_stated": false}
+  ],
+  "must_not_extract": [
+    {"title": "Low-emission materials (entity-specific)", "page": 71, "why": "financial opportunity"},
+    {"title": "Growth rate of the wind industry (entity-specific)", "page": 71, "why": "financial opportunity"},
+    {"title": "Recyclable blades", "page": 72, "why": "financial opportunity"},
+    {"title": "Cyber security incidents (entity-specific, potential)", "page": 74, "why": "impact on people, not a financial risk to the company"}
+  ],
+  "governance": {
+    "page": 50,
+    "phrase": "reviewed every six months",
+    "reviewed_by": ["Executive Management Team", "Board of Directors", "Audit Committee"]
+  }
+}

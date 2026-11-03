@@ -1,0 +1,466 @@
+{
+  "company": "Vestas",
+  "source_file": "VestasAnnualReport2025.pdf",
+  "source_sha256": "09aa4e8bd783ba4b964322945e3c24f1a1140045cc4e499f518a613ab707cfdc",
+  "pipeline_version": "0.1.0",
+  "taxonomy_version": "1.0",
+  "extraction_method": "rules (layout geometry); no LLM in this slice",
+  "risks": [
+    {
+      "id": "p51-geopolitics-and-regulatory-framework",
+      "title": "Geopolitics and regulatory framework",
+      "description": "In 2025, Vestas continued to navigate significant challenges arising from shifting geopolitical tensions across the world. Conflicts in Ukraine and the Middle East continued to disrupt regional stability, affecting global supply chains and business operations. Trade tensions between major economies have intensified, leading to tariffs, sanctions, export controls, and targeted restrictions on e.g. critical materials which complicate global operations.",
+      "category": "geopolitical",
+      "risk_type": "principal_enterprise_risk",
+      "section": "Corporate governance – Risk management",
+      "page": 51,
+      "mitigation": "We manage geopolitical risks by continuously monitoring global developments and implementing appropriate mitigations. By maintaining a global and regionalised manufacturing footprint, Vestas can effectively respond to geopolitical shifts and regulatory changes. Proactive advocacy ensures alignment and compliance with evolving policies and the regulatory climate. Additionally, we exercise commercial discipline and utilise indexation and financial hedging strategies to minimise exposure.",
+      "mitigation_stated": true,
+      "value_chain": null,
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 51,
+          "quote": "In 2025, Vestas continued to navigate significant challenges arising from shifting geopolitical tensions across the world.",
+          "bbox": [
+            231.73,
+            132.63,
+            412.42,
+            283.92
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Conflicts in Ukraine and the Middle East continued to disrupt regional stability, affecting global supply chains and business operations.",
+          "bbox": [
+            231.73,
+            132.63,
+            412.42,
+            283.92
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Trade tensions between major economies have intensified, leading to tariffs, sanctions, export controls, and targeted restrictions on e.g. critical materials which complicate global operations.",
+          "bbox": [
+            231.73,
+            132.63,
+            412.42,
+            283.92
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "We manage geopolitical risks by continuously monitoring global developments and implementing appropriate mitigations.",
+          "bbox": [
+            231.73,
+            393.65,
+            412.32,
+            480.93
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "By maintaining a global and regionalised manufacturing footprint, Vestas can effectively respond to geopolitical shifts and regulatory changes.",
+          "bbox": [
+            231.73,
+            393.65,
+            412.32,
+            480.93
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Proactive advocacy ensures alignment and compliance with evolving policies and the regulatory climate.",
+          "bbox": [
+            231.73,
+            393.65,
+            412.32,
+            480.93
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Additionally, we exercise commercial discipline and utilise indexation and financial hedging strategies to minimise exposure.",
+          "bbox": [
+            231.73,
+            393.65,
+            412.32,
+            480.93
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p51-project-execution",
+      "title": "Project execution",
+      "description": "Project execution at Vestas involves delivering complex onshore and offshore projects within specified parameters relating to quality, cost, and timeline. As the scale and complexity of offshore projects grow, so does the need for precise internal coordination. Execution is affected by delays in production capacity ramp-up, quality control issues during scaling, and supply chain disruptions.",
+      "category": "operational",
+      "risk_type": "principal_enterprise_risk",
+      "section": "Corporate governance – Risk management",
+      "page": 51,
+      "mitigation": "We mitigate execution risks through project governance, enhanced planning functions, and continuous alignment between commercial and delivery teams. We invest in scalable manufacturing capacity and maintain close coordination with suppliers to secure timely component availability.",
+      "mitigation_stated": true,
+      "value_chain": null,
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 51,
+          "quote": "Project execution at Vestas involves delivering complex onshore and offshore projects within specified parameters relating to quality, cost, and timeline.",
+          "bbox": [
+            429.45,
+            132.65,
+            609.73,
+            275.94
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "As the scale and complexity of offshore projects grow, so does the need for precise internal coordination.",
+          "bbox": [
+            429.45,
+            132.65,
+            609.73,
+            275.94
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Execution is affected by delays in production capacity ramp-up, quality control issues during scaling, and supply chain disruptions.",
+          "bbox": [
+            429.45,
+            132.65,
+            609.73,
+            275.94
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "We mitigate execution risks through project governance, enhanced planning functions, and continuous alignment between commercial and delivery teams.",
+          "bbox": [
+            429.45,
+            393.66,
+            607.03,
+            448.93
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "We invest in scalable manufacturing capacity and maintain close coordination with suppliers to secure timely component availability.",
+          "bbox": [
+            429.45,
+            393.66,
+            607.03,
+            448.93
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p51-cyber-attacks",
+      "title": "Cyber attacks",
+      "description": "Vestas’ digital and other critical assets are exposed to cyber attacks. A cyber attack may have dual implications for both Vestas as a company and for the societies that our energy solutions serve. Electricity producers rely on Vestas’ energy solutions for reliable and secure sustainable energy production, making these solutions critical infrastructure for societies around the world.",
+      "category": "cyber",
+      "risk_type": "principal_enterprise_risk",
+      "section": "Corporate governance – Risk management",
+      "page": 51,
+      "mitigation": "As a global manufacturer and key contributor to critical infrastructure, Vestas is required to continuously address evolving cyber risks, both to our company and to the customers we serve. We are developing cyber security services aimed at helping our customers navigate cyber risks effectively, fulfil industry requirements and standards, and uphold their responsibilities. During 2025, our cyber security efforts were effective and no critical cyber security incidents took place.",
+      "mitigation_stated": true,
+      "value_chain": null,
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 51,
+          "quote": "Vestas’ digital and other critical assets are exposed to cyber attacks.",
+          "bbox": [
+            627.16,
+            132.66,
+            805.64,
+            251.95
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "A cyber attack may have dual implications for both Vestas as a company and for the societies that our energy solutions serve.",
+          "bbox": [
+            627.16,
+            132.66,
+            805.64,
+            251.95
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "Electricity producers rely on Vestas’ energy solutions for reliable and secure sustainable energy production, making these solutions critical infrastructure for societies around the world.",
+          "bbox": [
+            627.16,
+            132.66,
+            805.64,
+            251.95
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "As a global manufacturer and key contributor to critical infrastructure, Vestas is required to continuously address evolving cyber risks, both to our company and to the customers we serve.",
+          "bbox": [
+            627.16,
+            393.66,
+            806.82,
+            480.95
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "We are developing cyber security services aimed at helping our customers navigate cyber risks effectively, fulfil industry requirements and standards, and uphold their responsibilities.",
+          "bbox": [
+            627.16,
+            393.66,
+            806.82,
+            480.95
+          ]
+        },
+        {
+          "page": 51,
+          "quote": "During 2025, our cyber security efforts were effective and no critical cyber security incidents took place.",
+          "bbox": [
+            627.16,
+            393.66,
+            806.82,
+            480.95
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p71-carbon-taxes-and-tariffs",
+      "title": "Carbon taxes and tariffs",
+      "description": "High carbon taxes and tariffs increase the price of GHG intense materials such as steel, increasing the overall cost to produce wind turbines.",
+      "category": "climate",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information / E1 Climate Change",
+      "page": 71,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Own operations",
+      "classification_basis": "inferred",
+      "evidence": [
+        {
+          "page": 71,
+          "quote": "Carbon taxes and tariffs High carbon taxes and tariffs increase the price of GHG intense materials such as steel, increasing the overall cost to produce wind turbines.",
+          "bbox": [
+            488.4,
+            471.13,
+            739.0,
+            494.48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p73-cost-implication-of-injuries-in-own-work",
+      "title": "Cost implication of injuries in own workforce",
+      "description": "Potential injuries leading to delays, lost work hours and compensation costs pose a financial risk.",
+      "category": "operational",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / S1 Own Workforce",
+      "page": 73,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Own operations",
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 73,
+          "quote": "Cost implication of injuries in own workforce Potential injuries leading to delays, lost work hours and compensation costs pose a financial risk.",
+          "bbox": [
+            490.22,
+            160.17,
+            724.83,
+            183.52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p73-cost-implications-of-injuries-to-contrac",
+      "title": "Cost implications of injuries to contractors and sub-contractors",
+      "description": "Potential injuries to value chain workers leading to delays, lost work hours and compensation costs pose a risk.",
+      "category": "operational",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / S2 Workers in the value chain",
+      "page": 73,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Own operations",
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 73,
+          "quote": "Cost implications of injuries to contractors and sub-contractors Potential injuries to value chain workers leading to delays, lost work hours and compensation costs pose a risk.",
+          "bbox": [
+            490.22,
+            433.96,
+            714.71,
+            457.31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p73-fines-related-to-forced-or-child-labour",
+      "title": "Fines related to forced or child labour",
+      "description": "Vestas’ global network of suppliers combined with the risk of fines related to child and forced labour constitute a potential risk.",
+      "category": "regulatory",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / S2 Workers in the value chain",
+      "page": 73,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Upstream",
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 73,
+          "quote": "Fines related to forced or child labour Vestas’ global network of suppliers combined with the risk of fines related to child and forced labour constitute a potential risk.",
+          "bbox": [
+            490.22,
+            479.93,
+            737.67,
+            503.28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p74-insufficient-market-conditions",
+      "title": "Insufficient market conditions",
+      "description": "Inadequate grid expansion, ineffective auction design and permit delays could increase costs, hinder investments, and reduce the viability of wind deployment.",
+      "category": "market",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / G1 Business Conduct",
+      "page": 74,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Downstream",
+      "classification_basis": "inferred",
+      "evidence": [
+        {
+          "page": 74,
+          "quote": "Insufficient market conditions Inadequate grid expansion, ineffective auction design and permit delays could increase costs, hinder investments, and reduce the viability of wind deployment.",
+          "bbox": [
+            490.22,
+            344.08,
+            720.77,
+            367.43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p74-cyber-security-risks",
+      "title": "Cyber security risks",
+      "description": "Cyber attacks might disrupt business operations, expose intellectual property, or cause legal liability.",
+      "category": "cyber",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / G1 Business Conduct",
+      "page": 74,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Own operations",
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 74,
+          "quote": "Cyber security risks Cyber attacks might disrupt business operations, expose intellectual property, or cause legal liability.",
+          "bbox": [
+            490.22,
+            382.33,
+            715.75,
+            405.69
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p74-risk-of-corruption-and-bribery",
+      "title": "Risk of corruption and bribery",
+      "description": "Vestas’ global presence presents an increased risk of exposure to corruption and bribery.",
+      "category": "regulatory",
+      "risk_type": "material_sustainability_risk",
+      "section": "General information – Material impacts, risks, and opportunities / G1 Business Conduct",
+      "page": 74,
+      "mitigation": "not stated",
+      "mitigation_stated": false,
+      "value_chain": "Own operations",
+      "classification_basis": "stated",
+      "evidence": [
+        {
+          "page": 74,
+          "quote": "Risk of corruption and bribery Vestas’ global presence presents an increased risk of exposure to corruption and bribery.",
+          "bbox": [
+            490.22,
+            420.3,
+            722.9,
+            443.66
+          ]
+        }
+      ]
+    }
+  ],
+  "governance": {
+    "review_frequency": "Vestas’ most significant risks, including material sustainability topics such as climate change mitigation and responsible business conduct, are reviewed every six months by the Executive Management Team, the Board of Directors, and the Audit Committee.",
+    "reviewed_by": [
+      "Executive Management Team",
+      "Board of Directors",
+      "Audit Committee"
+    ],
+    "page": 50,
+    "evidence": {
+      "page": 50,
+      "quote": "Vestas’ most significant risks, including material sustainability topics such as climate change mitigation and responsible business conduct, are reviewed every six months by the Executive Management Team, the Board of Directors, and the Audit Committee.",
+      "bbox": [
+        297.64,
+        80.87,
+        544.25,
+        510.68
+      ]
+    }
+  },
+  "coverage": {
+    "locator_candidates": [
+      78,
+      50,
+      51,
+      77,
+      73,
+      72,
+      74,
+      118,
+      162,
+      71
+    ],
+    "processed_pages": [
+      50,
+      51,
+      71,
+      72,
+      73,
+      74,
+      118
+    ],
+    "candidates_outside_scope": [
+      78,
+      77,
+      162
+    ],
+    "pages_without_a_handler": [
+      118
+    ],
+    "stats": {
+      "hyphen_joined": 1,
+      "skipped_opportunity": 3,
+      "skipped_immaterial": 8
+    },
+    "fault_injected": "none"
+  }
+}

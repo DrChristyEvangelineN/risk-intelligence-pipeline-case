@@ -11,14 +11,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import json
 import math
 import platform
 import statistics
 import sys
 import time
 from collections import Counter
-from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -26,6 +24,7 @@ from typing import Optional
 import pymupdf
 
 from risk_pipeline.page_model import Image, Line, Page, Rect, Word
+from risk_pipeline.page_store import save_pages
 
 SCHEMA_VERSION = 1
 DECIMALS = 2  # coordinates rounded to 0.01 point (1/7200 inch): far below any layout signal
@@ -162,31 +161,12 @@ def read_pdf(pdf_path: Path) -> tuple[list[Page], dict]:
     return pages, stamp
 
 
-# --- Save / load -------------------------------------------------------------------
-def save_pages(pages: list[Page], stamp: dict, out_path: Path) -> None:
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"stamp": stamp, "pages": [asdict(p) for p in pages]}
-    out_path.write_text(json.dumps(payload, separators=(",", ":")), encoding="utf-8")
-
-
-def load_pages(path: Path) -> tuple[list[Page], dict]:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    pages = []
-    for d in data["pages"]:
-        pages.append(Page(
-            number=d["number"], width=d["width"], height=d["height"], rotation=d["rotation"],
-            words=[Word(**w) for w in d["words"]],
-            lines=[Line(**x) for x in d["lines"]],
-            rects=[Rect(**x) for x in d["rects"]],
-            images=[Image(**x) for x in d["images"]],
-        ))
-    return pages, data["stamp"]
-
-
 # --- Checks ------------------------------------------------------------------------
-def check_pages(pages: list[Page], pdf_path: Path, tolerance: float = 1.0) -> list[str]:
+def check_pages(pages: list[Page], pdf_path: Path, stamp: dict, tolerance: float = 1.0) -> list[str]:
     """Independent checks on the output. Returns a list of problems (empty = all good)."""
     problems: list[str] = []
+    expected_emptied = stamp["stats"].get("dropped_empty_after_cleaning", 0)
+    total_emptied = 0
     with pymupdf.open(pdf_path) as doc:
         if doc.page_count != len(pages):
             problems.append(f"page count: PDF has {doc.page_count}, we have {len(pages)}")
@@ -195,6 +175,7 @@ def check_pages(pages: list[Page], pdf_path: Path, tolerance: float = 1.0) -> li
             #    words that cleaning emptied (e.g. a lone soft hyphen)
             parser_n = len(src.get_text("words"))
             emptied = parser_n - len(page.words)
+            total_emptied += emptied
             if emptied < 0 or any(not w.text for w in page.words):
                 problems.append(f"page {page.number}: we have {len(page.words)} words, parser has {parser_n}")
             # 2. every box inside the page (small tolerance) and well-formed
@@ -210,6 +191,8 @@ def check_pages(pages: list[Page], pdf_path: Path, tolerance: float = 1.0) -> li
                         or w.x1 > page.width + tolerance or w.y1 > page.height + tolerance):
                     problems.append(f"page {page.number}: box outside page for {w.text!r}")
                     break
+    if total_emptied != expected_emptied:
+        problems.append(f"words lost: {total_emptied} missing vs {expected_emptied} emptied by cleaning")
     return problems
 
 
@@ -225,12 +208,13 @@ def main(argv: Optional[list[str]] = None) -> int:
     ap.add_argument("pdf", type=Path)
     ap.add_argument("--out", type=Path, default=Path("data/intermediate/page_models.json"))
     args = ap.parse_args(argv)
+    sys.stdout.reconfigure(errors="replace")  # never crash on a character the console lacks
 
     t0 = time.time()
     pages, stamp = read_pdf(args.pdf)
     t_read = time.time() - t0
     save_pages(pages, stamp, args.out)
-    problems = check_pages(pages, args.pdf)
+    problems = check_pages(pages, args.pdf, stamp)
 
     words = sum(len(p.words) for p in pages)
     print(f"Read {len(pages)} pages in {t_read:.1f}s -> {args.out} "

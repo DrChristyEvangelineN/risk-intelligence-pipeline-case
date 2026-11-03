@@ -1,0 +1,41 @@
+{
+  "fault": "hallucinate-mitigation",
+  "run_utc": "2026-11-03T09:31:42+00:00",
+  "pipeline_version": "0.1.0",
+  "taxonomy_version": "1.0",
+  "source_sha256": "09aa4e8bd783ba4b964322945e3c24f1a1140045cc4e499f518a613ab707cfdc",
+  "metrics": {
+    "title_recall": 1.0,
+    "title_precision": 1.0,
+    "category_accuracy": 1.0,
+    "mitigation_accuracy": 0.9,
+    "grounding_rate": 0.955,
+    "forbidden_items": 0,
+    "schema_problems": 0,
+    "governance_ok": 1.0
+  },
+  "thresholds": {
+    "title_recall": 0.9,
+    "title_precision": 0.9,
+    "category_accuracy": 0.8,
+    "mitigation_accuracy": 1.0,
+    "grounding_rate": 1.0,
+    "forbidden_items": 0,
+    "schema_problems": 0,
+    "governance_ok": 1.0
+  },
+  "failed": [
+    "mitigation_accuracy",
+    "grounding_rate"
+  ],
+  "passed": false,
+  "details": {
+    "missing": [],
+    "category_mismatches": [],
+    "ungrounded_sentences": [
+      "p51-geopolitics-and-regulatory-framework: Vestas relies on insurance and contractual penalties to cover losses."
+    ],
+    "forbidden_extracted": [],
+    "validation_problems": []
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "note": "Pages the first slice is allowed to process: the brief's core sections. Locator candidates outside this list are reported, not processed.",
+  "core_pages": [50, 51, 71, 72, 73, 74],
+  "optional_pages": [118, 85, 86, 87, 88, 89, 90, 91, 92]
+}
