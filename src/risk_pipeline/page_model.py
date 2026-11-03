@@ -25,6 +25,7 @@ class Word:
     y1: float
     size: float                # font size in points (used later to spot headings)
     bold: bool                 # True if the font is bold (also used for headings)
+    font: str = ""             # font name as stored in the PDF (weights differ by font)
     raw: Optional[str] = None  # the original text, kept ONLY if cleaning changed it
 
 
