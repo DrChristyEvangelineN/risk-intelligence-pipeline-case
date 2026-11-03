@@ -1,7 +1,8 @@
 {
   "fault": "hallucinate-mitigation",
-  "run_utc": "2026-11-03T09:31:42+00:00",
-  "pipeline_version": "0.1.0",
+  "language_model": null,
+  "run_utc": "2026-11-03T12:22:33+00:00",
+  "pipeline_version": "0.2.0",
   "taxonomy_version": "1.0",
   "source_sha256": "09aa4e8bd783ba4b964322945e3c24f1a1140045cc4e499f518a613ab707cfdc",
   "metrics": {
@@ -12,7 +13,8 @@
     "grounding_rate": 0.955,
     "forbidden_items": 0,
     "schema_problems": 0,
-    "governance_ok": 1.0
+    "governance_ok": 1.0,
+    "description_support": 1.0
   },
   "thresholds": {
     "title_recall": 0.9,
@@ -22,7 +24,8 @@
     "grounding_rate": 1.0,
     "forbidden_items": 0,
     "schema_problems": 0,
-    "governance_ok": 1.0
+    "governance_ok": 1.0,
+    "description_support": 1.0
   },
   "failed": [
     "mitigation_accuracy",

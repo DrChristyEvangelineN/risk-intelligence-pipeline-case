@@ -1,0 +1,6 @@
+{
+  "taxonomy_version": "1.0",
+  "source_sha256": "09aa4e8bd783ba4b964322945e3c24f1a1140045cc4e499f518a613ab707cfdc",
+  "how_to_use": "Fill human_category for each item (a name from the taxonomy, or NEW:<name> to propose a category), then run: python -m risk_pipeline.review --queue <this file> --golden eval/golden.json",
+  "items": []
+}

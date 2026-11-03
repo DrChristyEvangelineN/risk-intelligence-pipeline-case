@@ -33,7 +33,14 @@ class Risk(BaseModel):
     mitigation_stated: bool
     value_chain: Optional[str] = None
     classification_basis: Literal["stated", "inferred"] = "stated"
+    # Where each judged field came from, so an analyst can see what a person, a rule or a model decided.
+    category_source: Literal["rules", "model", "human"] = "rules"
+    description_source: Literal["extractive", "model"] = "extractive"
+    mitigation_source: Literal["table", "model", "none"] = "none"
     evidence: list[Evidence] = Field(min_length=1)
+    # Working text for the optional language-model step. Never written to the output JSON.
+    source_text: str = Field(default="", exclude=True)   # the risk's description text (what a summary reads)
+    scan_text: str = Field(default="", exclude=True)     # the risk's whole own text (where mitigation is looked for)
 
     @field_validator("title")
     @classmethod

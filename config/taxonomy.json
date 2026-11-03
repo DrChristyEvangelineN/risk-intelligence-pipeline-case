@@ -1,16 +1,120 @@
 {
   "version": "1.0",
-  "categories": ["financial", "operational", "regulatory", "market", "climate", "cyber",
-                 "supply_chain", "geopolitical", "other"],
+  "categories": [
+    "financial",
+    "operational",
+    "regulatory",
+    "market",
+    "climate",
+    "cyber",
+    "supply_chain",
+    "geopolitical",
+    "other"
+  ],
   "note": "Closed list. First matching rule wins; the title is tried before the description. Unmatched risks go to 'other' for human review, which is how the list grows (taxonomy v2) without re-reading any PDF.",
   "rules": [
-    {"category": "cyber",        "keywords": ["cyber", "ransomware", "information security", "data breach"]},
-    {"category": "climate",      "keywords": ["climate", "greenhouse", "ghg", "carbon", "emission", "extreme weather", "biodiversity"]},
-    {"category": "geopolitical", "keywords": ["geopolit", "sanction", "trade tension", "export control", "tariff", "conflict"]},
-    {"category": "regulatory",   "keywords": ["regulat", "compliance", "fines", "legislation", "corruption", "bribery", "permit", "legal"]},
-    {"category": "supply_chain", "keywords": ["supply chain", "supplier", "upstream", "raw material", "logistic"]},
-    {"category": "market",       "keywords": ["market", "demand", "competition", "competitor", "auction", "pricing"]},
-    {"category": "financial",    "keywords": ["interest rate", "currency", "liquidity", "credit", "financing", "inflation", "capital"]},
-    {"category": "operational",  "keywords": ["injur", "safety", "workforce", "execution", "production", "quality", "delay", "workers", "labour"]}
-  ]
+    {
+      "category": "cyber",
+      "keywords": [
+        "cyber",
+        "ransomware",
+        "information security",
+        "data breach"
+      ]
+    },
+    {
+      "category": "climate",
+      "keywords": [
+        "climate",
+        "greenhouse",
+        "ghg",
+        "carbon",
+        "emission",
+        "extreme weather",
+        "biodiversity"
+      ]
+    },
+    {
+      "category": "geopolitical",
+      "keywords": [
+        "geopolit",
+        "sanction",
+        "trade tension",
+        "export control",
+        "tariff",
+        "conflict"
+      ]
+    },
+    {
+      "category": "regulatory",
+      "keywords": [
+        "regulat",
+        "compliance",
+        "fines",
+        "legislation",
+        "corruption",
+        "bribery",
+        "permit",
+        "legal"
+      ]
+    },
+    {
+      "category": "supply_chain",
+      "keywords": [
+        "supply chain",
+        "supplier",
+        "upstream",
+        "raw material",
+        "logistic"
+      ]
+    },
+    {
+      "category": "market",
+      "keywords": [
+        "market",
+        "demand",
+        "competition",
+        "competitor",
+        "auction",
+        "pricing"
+      ]
+    },
+    {
+      "category": "financial",
+      "keywords": [
+        "interest rate",
+        "currency",
+        "liquidity",
+        "credit",
+        "financing",
+        "inflation",
+        "capital"
+      ]
+    },
+    {
+      "category": "operational",
+      "keywords": [
+        "injur",
+        "safety",
+        "workforce",
+        "execution",
+        "production",
+        "quality",
+        "delay",
+        "workers",
+        "labour"
+      ]
+    }
+  ],
+  "definitions": {
+    "financial": "Risks to the company's money: interest rates, currency, liquidity, credit, financing, inflation, capital.",
+    "operational": "Risks in how the company runs: projects, production, quality, delays, workforce safety and injuries.",
+    "regulatory": "Risks from laws and rules: regulation, compliance, fines, legislation, permits, corruption and bribery.",
+    "market": "Risks from customers and competition: demand, pricing, competitors, auctions, market conditions.",
+    "climate": "Risks from climate change or climate policy: emissions, carbon taxes, extreme weather, biodiversity.",
+    "cyber": "Risks from attacks on or failures of IT systems and data: cyber attacks, ransomware, data breaches.",
+    "supply_chain": "Risks from suppliers and materials: supplier failure, raw material shortages, logistics.",
+    "geopolitical": "Risks from politics between countries: conflict, sanctions, trade tensions, tariffs, export controls.",
+    "other": "Use only when none of the categories above fits."
+  }
 }

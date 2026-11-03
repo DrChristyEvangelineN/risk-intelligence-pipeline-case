@@ -92,6 +92,7 @@ def extract_risk_matrix(table: L.Table, page: Page, noise: set[Word], vocab: Cou
         desc = " ".join(lead)
         ev = [Evidence(page=page.number, quote=s, bbox=bbox_of(d_words)) for s in lead]
         mitigation, stated = NOT_STATED, False
+        full_description = " ".join(d_paras)
         if "mitigation" in rows and rows["mitigation"].cells[c]:
             m_words = rows["mitigation"].cells[c]
             mitigation = " ".join(L.paragraphs(m_words, vocab, stats))
@@ -102,7 +103,10 @@ def extract_risk_matrix(table: L.Table, page: Page, noise: set[Word], vocab: Cou
         risks.append(Risk(
             id=f"p{page.number}-{slug(title)}", title=title, description=desc, category=cat,
             risk_type="principal_enterprise_risk", section=crumb, page=page.number,
-            mitigation=mitigation, mitigation_stated=stated, evidence=ev))
+            mitigation=mitigation, mitigation_stated=stated,
+            mitigation_source="table" if stated else "none", evidence=ev,
+            source_text=full_description,
+            scan_text=(full_description + " " + mitigation).strip() if stated else full_description))
     return risks
 
 
@@ -166,7 +170,8 @@ def extract_iro_table(table: L.Table, page: Page, noise: set[Word], vocab: Count
             section=f"{crumb} / {section}".strip(" /"), page=page.number,
             mitigation=NOT_STATED, mitigation_stated=False,
             value_chain=vc or None, classification_basis="stated" if stated else "inferred",
-            evidence=[Evidence(page=page.number, quote=f"{name} {desc}".strip(), bbox=bbox_of(cell))]))
+            evidence=[Evidence(page=page.number, quote=f"{name} {desc}".strip(), bbox=bbox_of(cell))],
+            source_text=f"{name}. {desc}".strip(), scan_text=f"{name}. {desc}".strip()))
     return risks
 
 
